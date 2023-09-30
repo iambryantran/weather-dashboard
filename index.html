@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Weather Dashboard</title>
+</head>
+<body class="container-fluid flex-column">
+    <header class="bg-primary-subtle border">
+        <h1 class="text-center">Weather Dashboard</h1>
+    </header>
+    <main class="row border">
+        <section id="sidebar" class="col-3">
+            <div id="search">
+                <input type="text" id="search-input" placeholder="Search for a city" spellcheck="false">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="history">
+                <h2>History</h2>
+                <ul id="history-list">
+                </ul>
+            </div>
+        </section>
+        <section id="weather" class="col-9 border">
+            <div id="current-weather">
+                <h2 id="city-name">Nashville</h2>
+                <p id="current-date">9/30/23</p>
+                <img id="current-icon" src="" alt="weather icon">
+                <p id="current-temp">9000</p>
+                <p id="current-humidity">100%</p>
+                <p id="current-wind">500mph</p>
+            </div>
+            <div id="forecast">
+                <h2>5-Day Forecast</h2>
+                <div id="forecast-cards" class="row">
+                    <div class="card border">
+                        <h3 id="day1">10/01/23</h3>
+                        <img id="icon1" src="" alt="weather icon">
+                        <p id="temp1"></p>
+                        <p id="wind"></p>
+                        <p id="humidity1"></p>
+                    </div>
+                    <div class="card border">
+                        <h3 id="day2">10/02/23</h3>
+                        <img id="icon2" src="" alt="weather icon">
+                        <p id="temp2"></p>
+                        <p id="wind2"></p>
+                        <p id="humidity2"></p>
+                    </div>
+                    <div class="card border">
+                        <h3 id="day3">10/03/23</h3>
+                        <img id="icon3" src="" alt="weather icon">
+                        <p id="temp3"></p>
+                        <p id="wind3"></p>
+                        <p id="humidity3"></p>
+                    </div>
+                    <div class="card border">
+                        <h3 id="day4">10/04/23</h3>
+                        <img id="icon4" src="" alt="weather icon">
+                        <p id="temp4"></p>
+                        <p id="wind4"></p>
+                        <p id="humidity4"></p>
+                    </div>
+                    <div class="card border">
+                        <h3 id="day5">10/05/23</h3>
+                        <img id="icon5" src="" alt="weather icon">
+                        <p id="temp5"></p>
+                        <p id="wind5"></p>
+                        <p id="humidity5"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script> 
+</body>
+</html>
